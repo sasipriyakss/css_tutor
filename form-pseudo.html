@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#t1:focus{
+    outline: none;
+    border: 1px solid lightgreen;
+}
+
+input[type="checkbox"]:checked{
+    border: 1px solid red;
+    box-shadow: 0 0 0 3px rgb(39, 38, 34);
+}
+
+input[type="text"]:enabled{
+    background-color: pink;
+}
+
+input[type="text"]:disabled{
+    background-color:red;
+}
+input[type="text"]:required{
+    background-color: green;
+}
+
+    </style>
+</head>
+<body>
+    <h3>From CSS pseudo class selector</h3>
+
+    <span>:Focus</span>
+    <input type="text" id="t1">
+    <hr>
+    <span>;checked</span>
+    <input type="checkbox"id="cricket">
+    <label for="cricket">cricket</label>
+    <input type="checkbox" id="football">
+    <label for="football">football</label>
+     <input type="checkbox" id="tennis">
+     <label for="tennis">Tennis</label>
+ <hr>
+ <span>:enabled :disabled :required :optional</span>
+<br><input type="text"><br>
+<input type="text"disabled>
+<br>
+<input type="text" required>
+<br>
+
+
+
+</body>
+</html>

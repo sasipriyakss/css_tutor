@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class selector</title>
+    <style>
+        p:nth-of-type(1)
+        {
+            color: tomato;   /*here p do not have a parent element it takes overall body order*/
+        }
+        p:nth-last-of-type(1)
+        {
+            color: limegreen;
+        }
+
+        li:nth-of-type(1){
+            color:blue;
+        }
+
+        li:nth-last-of-type(1)  /* we can use odd or even keywords*/
+        {
+            color: darkorchid;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>css pseudo class selector | nth-of-type|:nth-last-of type</h1>
+<ul>
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+</ul>
+<ul>
+    <li>item-1</li>
+    <li>item-2</li>
+    <li>item-3</li>
+    <li>item-4</li>
+    <li>item-5</li>
+</ul>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa porro eius esse, sed corporis tenetur sequi soluta quasi accusantium voluptatem.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus pariatur repudiandae dolorem quisquam? Dolores voluptatem modi magni asperiores? Expedita, asperiores.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam expedita mollitia consequuntur. Deleniti voluptatem, doloremque quo reprehenderit earum ea?</p>
+</body>
+</html>

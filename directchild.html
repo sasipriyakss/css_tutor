@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct selector</title>
+    <style>
+        .box>p{
+            color: blueviolet;
+        }
+.box+p{
+    color: green;   /* Adjacent selector*/
+}
+    </style>
+
+</head>
+<body>
+   <div class="box">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, recusandae hic dolorem delectus quisquam architecto.</p>
+    <p>Lorem ipsum dolor sit amet <span>welcome</span>consectetur adipisicing elit. Ipsam suscipit ex maiores omnis voluptas laudantium.</p>
+   
+   <div class="inner-box">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum maxime facere, laborum mollitia porro qui?</p>
+   </div>
+   </div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iure!</p>
+</body>
+</html>

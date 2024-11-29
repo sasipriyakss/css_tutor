@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        } 
+        table tr:nth-child(even)
+        {
+          background-color: aquamarine;  
+        }
+    
+    </style>
+</head>
+<body>
+    <h3>Display table in css</h3>
+    <table width="50%" border="1px" cellpadding="10px" cellspacing="10px">
+        <caption>student details</caption>
+        <colgroup>
+            <col style="width:150px;">     <!--using  col group only we can change col height and width-->
+            <col style="width:50px;">
+            <col>
+        </colgroup>
+        <thead><tr>
+            <th>NAME</th>
+            <th>age</th>
+            <th>city</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <td>hari</td>
+                <td>12</td>
+                <td>cbe</td>
+            </tr>
+            <tr>
+                <td>diya</td>
+                <td>13</td>
+                <td rowspan="2">salem</td>
+            </tr>
+            <tr>
+                <td>abinav</td>
+                <td>12</td>
+                
+            </tr>
+
+        </tbody>
+        <tfoot><tr><td colspan="3">School</td></tr></tfoot>
+    </table>
+</body>
+</html>

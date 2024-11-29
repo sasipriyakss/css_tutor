@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display table</title>
+    <style>
+.table{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: table;
+    width:600px;
+    /* border:1px solid #333; */
+}
+.row{
+    display: table-row;    /*t row*/
+}
+.col{
+    display: table-cell;
+    border: 1px solid orangered;   /*t col*/
+    padding:10px 30px;
+}
+.header{                            /*t head*/
+    display: table-header-group;
+
+    font-weight: bold;
+    text-align: center;
+    background-color: orangered;
+    color:white;
+}
+.footer{                            /*t footer*/
+    display: table-footer-group;
+}
+.caption{
+    display: table-caption;
+    text-align: center;
+    font-weight: 500;
+    color: orchid;
+    padding:10px;
+}
+.col-group{
+    display: table-column-group;
+}
+.tbl-col{
+    display: table-column;
+}
+.col2{
+    width: 10px;
+    background: aquamarine;
+}
+.row-group{
+    display: table-row-group;
+    color:lawngreen;
+}
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="caption">
+            student details
+        </div>
+        <div class="colgroup">
+            <div class="tbl-col col2">col-1</div>
+            <div class="tbl-col">col-2</div>
+            <div class="tbl-col">col-3</div>
+        </div>
+<div class="header">
+    
+<div class="row">
+    <div class="col">Name</div>
+    <div class="col">Age</div>
+    <div class="col">City</div>
+</div></div>
+<div class="row-group">
+<div class="row">
+    <div class="col">abi</div>
+    <div class="col">8</div>
+    <div class="col">cbe</div>
+</div>
+<div class="row">
+    <div class="col">hari</div>
+    <div class="col">12</div>
+    <div class="col">chennai</div>
+</div>
+<div class="row">
+    <div class="col">sam</div>
+    <div class="col">6</div>
+    <div class="col">salem</div>
+</div>
+<div class="row">
+    <div class="col">zoya</div>
+    <div class="col">8</div>
+    <div class="col">chennai</div>
+</div>
+<div class="row">
+    <div class="col">jaya</div>
+    <div class="col">13</div>
+    <div class="col">erode</div>
+</div></div>
+<div class="footer">
+    <div class="row">
+        <div class="col">Total student</div>
+        <div class="col"></div>
+        <div class="col">5</div>
+    </div></div>
+    </div>
+</body>
+</html>

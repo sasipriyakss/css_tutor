@@ -1,0 +1,24 @@
+body{
+    background:white;
+    background-image: url("j1.png");
+    background-repeat:no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-size: 100px 100px;
+    background-position: top right;
+    width: 500px;
+    height:500px;
+}
+h1{
+  color: purple;  
+}
+div{
+    width: 900px;
+    height: 600px;
+    background: teal url(j1.png) no-repeat;
+    padding:10px;
+    background-size: auto;
+    background-size: 200px;
+    background-size: cover;
+    background-size: contain;
+}

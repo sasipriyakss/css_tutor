@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #box  p{
+            color:red;
+        }
+        .test{
+            color: blueviolet;
+        }
+        p{
+            color:green !important;  /* this keyword gives the first priority*/
+
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quo?</p>
+    <p>Lorem, ipsum dolor it amet consectetur adipisicing elit. Labore, veritatis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, cum!</p>
+<div id="box">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quo?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, veritatis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, cum!</p>
+<p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt!</p>
+</div>
+</body>
+</html>
